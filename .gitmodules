@@ -1,0 +1,3 @@
+[submodule "nuxtproject"]
+	path = nuxtproject
+	url = https://github.com/tkwest2014/nuxtproject.git
