@@ -56,6 +56,14 @@ import Layoutdefault from '../layouts/layoutdefault.vue';
 
   export default{
     name: 'app',
+    head(){
+      return{
+        title: 'Homepage',
+        meta:[
+          {hid: 'description', name: 'description', content: 'Page with the latest content'}
+        ]
+      }
+    },
     components: {
       Layoutdefault
     }

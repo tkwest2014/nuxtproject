@@ -18,6 +18,14 @@
 
   export default{
     name: "app",
+    head(){
+      return{
+        title: 'Images',
+        meta:[
+          {hid: 'description', name: 'description', content: 'Images of places traveled'}
+        ]
+      }
+    },
     components:{
       Post,
       Layoutdefault},

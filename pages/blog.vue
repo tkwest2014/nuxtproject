@@ -51,6 +51,14 @@ import Layoutdefault from '../layouts/layoutdefault.vue';
 //Create Variables For Repeated Content and set up variable for If/Else Statement
   export default{
     name: 'app',
+    head(){
+      return{
+        title: 'Travel Blog',
+        meta:[
+          {hid: 'description', name: 'description', content: 'Blog about traveling'}
+        ]
+      }
+    },
     components: {
       Layoutdefault
     },

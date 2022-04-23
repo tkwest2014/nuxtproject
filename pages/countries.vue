@@ -18,6 +18,14 @@
   import axios from 'axios';
 
   export default{
+    head(){
+      return{
+      title: 'Countries',
+      meta:[
+        {hid: 'description', name: 'description', content: 'List of countries'}
+        ]
+      }
+    },
     components:{
       Layoutdefault,
       Card

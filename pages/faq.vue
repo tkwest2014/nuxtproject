@@ -21,6 +21,14 @@ import Layoutdefault from '../layouts/layoutdefault.vue';
 //Create Objects for Accordion
   export default{
     name: 'app',
+    head(){
+      return{
+        title: 'FAQ',
+        meta:[
+          {hid: 'description', name: 'description', content: 'Answers to Frequently Asked Questions'}
+        ]
+      }
+    },
     components: {
       Layoutdefault
     },

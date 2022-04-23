@@ -12,6 +12,14 @@ import clickMixin from '../pages/mixin.vue';
 
   export default{
     name: "post",
+    head(){
+      return{
+        title: 'Images',
+        meta:[
+          {hid: 'description', name: 'description', content: 'Images of places traveled'}
+        ]
+      }
+    },
     props: {post: Array},
     mixins: [clickMixin]
       }
